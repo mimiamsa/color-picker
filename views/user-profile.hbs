@@ -1,0 +1,32 @@
+<div class="user-profile-container">
+  <div class="user-infos">
+    <div class="user-avatar"></div>
+    <h1 class="user-name">{{user.name}} {{user.lastname}}</h1>
+  </div>
+  {{#if userSwatches.length}}
+  <div class="user-swatches-container">
+    {{#each userSwatches}}
+    <div class="user-swatch">
+      <div class="img-user-container" style="background-image: url('{{this.image.link}}');">
+        <ul class="swatches">
+          {{#each this.swatches}}
+          <li class="swatch" style="background: {{this}}"></li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="swatch-infos">
+        <h3 class="title">{{this.palette_name}}</h3>
+        <ul class="tag list">
+          {{#each this.image.category}}
+          <li class="tags"><span class="tag-item">{{this}}</span></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/if}}
+{{#else}}
+NO SWATCHES LOOSER :D
+{{/else}}

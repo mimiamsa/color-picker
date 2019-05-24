@@ -1,0 +1,19 @@
+input[type="text"],
+input[type="email"], 
+input[type="password"]{
+font-size: 1rem;
+font-family:'Favorit' ;
+color: $off-white;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-item {
+  padding: 12px 20px;
+  margin-bottom: 1rem;
+  border: 1px solid $off-white;
+  border-radius: 5px;
+  background: none;
+}

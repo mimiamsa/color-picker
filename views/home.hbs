@@ -1,0 +1,28 @@
+<main class="home-wrapper">
+  <section class="main-container">
+    <div class="canvas-container">
+      <div id="filter-btn-container" class="filter-btn-container">
+        <h3 class="filter-btn-title h3title">Use random image from library:</h3>
+        <button data-category="human" class="btn-category btn btn-dark" id="get-human-pic-btn">Human</button>
+        <button data-category="cold" class="btn-category btn btn-dark" id="get-cold-pic-btn">Cold</button>
+        <button data-category="warm" class="btn-category btn btn-dark" id="get-warm-pic-btn">Warm</button>
+        <button data-category="still" class="btn-category btn btn-dark" id="get-still-pic-btn">Still Life</button>
+        <button data-category="outside" class="btn-category btn btn-dark" id="get-outside-pic-btn">Outside</button>
+      </div>
+      <canvas id="mainCanvas" class="hidden"></canvas>
+      <h5 id="image-credit" class="image-credit"></h5>
+      <canvas id="canvasZoom" width="80" height="80" style="position:absolute; top:80px; left:0; display:none"></canvas>
+    </div>
+    <div class="upload-file-container">
+      <h3 class="h3title">Or upload your own picture!</h3>
+    </div>
+  </section>
+  <aside class="wrapper-palette">
+    <div class="title-save-container">
+      <input type="text" name="palette_name" id="palette_name" value="My default Palette" class="input-title">
+      <button id="send-palette-btn" class="input-title-btn btn btn-light">Save it!</button>
+    </div>
+    <div class="swatch-container">
+    </div>
+  </aside>
+</main>

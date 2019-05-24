@@ -1,0 +1,22 @@
+<div class="page-container">
+  <section class="form-wrapper">
+    <div class="login-box">
+      <h1>Welcome Back !</h1>
+
+      {{!-- <h2>Create your Account and start your image color journey !</h2> --}}
+      {{msg}}
+
+      <form method="post" action="/dashboard/user/login" id="user-login-form" class="user-form">
+        <h2>Keep on your image color experience, <br> share yout passion for colors and photography</h2>
+
+        {{!-- <label for="email">Email</label> --}}
+        <input type="email" placeholder="Email" name="email" class="input-item">
+        {{!-- <label for="password">Password</label> --}}
+        <input type="password" name="password" placeholder="Password" class="input-item" value=>
+        <button class="btn btn-light btn-login" id="user-login-btn">Connect to your account</button>
+      </form>
+
+      <p>Don't have an account yet ? Please  <a  class="register-link" href="/register"> register here !</a></p>
+    </div>
+  </section>
+</div>

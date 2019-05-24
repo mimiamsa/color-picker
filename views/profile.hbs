@@ -1,0 +1,14 @@
+<h1>My Palettes!</h1>
+{{#each palettes}}
+  <div class="swatch-container" id="pal_{{this._id}}">
+    <h2>{{this.palette_name}}</h2>
+    <div style="background-color: {{this.swatches.[0]}}" class="swatch"></div>
+    <div style="background-color: {{this.swatches.[1]}}" class="swatch"></div>
+    <div style="background-color: {{this.swatches.[2]}}" class="swatch"></div>
+    <div style="background-color: {{this.swatches.[3]}}" class="swatch"></div>
+    <div style="background-color: {{this.swatches.[4]}}" class="swatch"></div>
+    <div style="background-color: {{this.swatches.[5]}}" class="swatch"></div>
+    <img src="{{this.image.link}}" alt="" style="width:80px; height: 80px">
+    <button class="delete-user-palette-btn" data-palette-id="{{this._id}}">Delete</button>
+  </div>
+{{/each}}

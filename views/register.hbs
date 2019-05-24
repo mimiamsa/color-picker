@@ -1,0 +1,26 @@
+<div class="page-container">
+    <section class="form-wrapper">
+        <h1 class="">Please register my friend</h1>
+        {{msg.txt}}
+        <form method="post" action="/dashboard/user/register" id="form_create_user" class="form user-form">
+            {{!-- <label for="name">Name</label> --}}
+            <input id="user-create-name" type="text" name="name" class="input-item" placeholder="Name" required>
+
+            {{!-- <label for="lastname">Last name</label> --}}
+            <input id="user-create-lastname" type="text" name="lastname" class="input-item" placeholder="Last name"
+                required>
+
+            {{!-- <label for="email">Email</label> --}}
+            <input id="user-create-email" type="email" name="email" class="input-item" placeholder="Email" required>
+
+            {{!-- <label for="city">City</label> --}}
+            <input id="user-create-city" type="text" name="city" class="input-item" placeholder="City" required>
+
+            {{!-- <label for="password">Password</label> --}}
+            <input id="user-create-password" type="password" name="password" class="input-item" placeholder="Password"
+                required value="1234">
+
+            <button id="btn_create_user" class="btn btn-light" style="width:100%">Sign up</button>
+        </form>
+    </section>
+</div>

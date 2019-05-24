@@ -1,0 +1,90 @@
+.user-profile-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  .user-infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+
+    .user-name {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .user-avatar {
+      background-image: url('https://res.cloudinary.com/dfbmzsyx7/image/upload/c_scale,w_800/v1556270113/pic_color/www.lundlund.com_-_glamour-us-beauty_4_n4erzx.jpg');
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.user-swatches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .user-swatch {
+    width: calc((90% - 64px) / 4);
+    margin-top: 40px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-user-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+
+    .swatches {
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+    }
+
+    .swatch {
+      border-radius: .2rem;
+      height: 30px;
+      width: 30px;
+      margin-right: 5px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .swatch-infos {
+
+    .list.tag {
+      display: flex;
+    }
+
+    .title {
+      margin-bottom: 0.5rem;
+    }
+    .tag-item {
+      margin-right: 0.5rem;
+      padding-bottom: 0.1rem;
+      border-bottom: 1px solid $off-white;
+    }
+
+  }
+
+}

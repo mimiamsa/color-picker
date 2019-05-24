@@ -1,0 +1,132 @@
+@import "./sass/variables";
+@import "./sass/reset";
+@import "./sass/font";
+@import "./sass/buttons";
+@import "./sass/home-palette";
+@import "./sass/login";
+@import "./sass/nav";
+@import "./sass/form";
+@import "./sass/img";
+/* ---------------GENERAL--------------- */
+
+* {
+  box-sizing: border-box;
+  color: $off-white;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: $dark-grey;
+  font-family: 'Favorit';
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: inherit
+}
+
+.h3title {
+  color: $off-white;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+/* ---------------HOME LAYOUT--------------- */
+
+.home-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  display: flex;
+  height: calc(100vh - 50px);
+
+  .main-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .canvas-container {
+    width: 100%;
+    background-color: $medium-grey;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.2));
+  }
+
+  .upload-file-container {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 1.2rem;
+    display: flex;
+    align-items: center;
+    background-color: $medium-grey;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.2));
+  }
+
+  .wrapper-palette {
+    width: 50%;
+    margin-left: 15px;
+  }
+}
+
+.filter-btn-container {
+  padding: 0.8rem 1.2rem;
+
+  .filter-btn-title {
+    padding-left: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-category {
+    margin: 0 2px;
+  }
+}
+
+/* ---------------CANVAS STYLING--------------- */
+
+#mainCanvas {
+  max-width: 100%;
+  // height: 70%;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#canvasZoom{
+  border: 4px solid $off-white;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
+}
+
+.image-credit{
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+  position: absolute;
+  bottom: 3%;
+  text-align: right;
+  right: 3%;
+  filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.3));
+}
+
+/* transition image */
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 600ms ease-in;
+}
